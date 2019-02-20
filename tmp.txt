@@ -1,0 +1,21 @@
+n = 49
+
+[2,3,4,5,6,7]
+2 no
+
+Butto i multipli di 2 cioè
+* 2 * 1, 2 * 2, 2 * 3, 2 * 4, 2 * 5, ...
+
+[3,5,7]
+3 no
+
+Butto i multipli di 3
+* 3 * 1
+
+[5,7]
+* 5 no
+* butto i multipli di 5
+* 5 * 1
+
+[7]
+7 si ...non + primo
