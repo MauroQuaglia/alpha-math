@@ -36,6 +36,46 @@ describe Prime do
       expect(described_class.decomposition(4)).to eq([2, 2])
     end
 
+    it "6 should be decomposed" do
+      expect(described_class.decomposition(6)).to eq([2, 3,4])
+    end
+
+    it "8 should be decomposed" do
+      expect(described_class.decomposition(8)).to eq([2, 2, 2])
+    end
+
+    it "9 should be decomposed" do
+      expect(described_class.decomposition(9)).to eq([3, 3])
+    end
+
+    it "10 should be decomposed" do
+      expect(described_class.decomposition(10)).to eq([2, 5])
+    end
+
+    it "12 should be decomposed" do
+      expect(described_class.decomposition(12)).to eq([2, 2, 3])
+    end
+
+    it "14 should be decomposed" do
+      expect(described_class.decomposition(14)).to eq([2, 7])
+    end
+
+    it "15 should be decomposed" do
+      expect(described_class.decomposition(15)).to eq([3, 5])
+    end
+
+    it "16 should be decomposed" do
+      expect(described_class.decomposition(16)).to eq([2, 2, 2, 2])
+    end
+
+    it "18 should be decomposed" do
+      expect(described_class.decomposition(18)).to eq([2, 3, 3])
+    end
+
+    it "20 should be decomposed" do
+      expect(described_class.decomposition(18)).to eq([2, 2, 5])
+    end
+
   end
 
 end
