@@ -22,6 +22,10 @@ describe Prime do
       end
     end
 
+    it "2 should be prime" do
+      expect(described_class.prime?(4)).to be_truthy
+    end
+
   end
 
   describe '.decomposition' do
@@ -37,7 +41,7 @@ describe Prime do
     end
 
     it "6 should be decomposed" do
-      expect(described_class.decomposition(6)).to eq([2, 3,4])
+      expect(described_class.decomposition(6)).to eq([2, 3])
     end
 
     it "8 should be decomposed" do
@@ -74,6 +78,10 @@ describe Prime do
 
     it "20 should be decomposed" do
       expect(described_class.decomposition(18)).to eq([2, 2, 5])
+    end
+
+    it "221 should be decomposed" do
+      expect(described_class.decomposition(221)).to eq([13, 17])
     end
 
   end

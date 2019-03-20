@@ -8,6 +8,7 @@ class Prime
   end
 
   def self.decomposition(number, factors = [])
+    break(print_decomposition(factors)) if number == 1
     (2..Math.sqrt(number).to_i).each do |divisor|
       divmod = number.divmod(divisor)
       quotient, rest = divmod.first, divmod.last
@@ -18,4 +19,9 @@ class Prime
     end
   end
 
+  def self.print_decomposition(factors)
+    
+  end
+
+#Primes in numbers
 end
