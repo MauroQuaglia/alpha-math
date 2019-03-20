@@ -20,7 +20,16 @@ class Prime
   end
 
   def self.print_decomposition(factors)
-    
+    map = factors.uniq.map {|factor| [factor, factors.count(factor)]}.to_h
+    result = ''
+    map.each do |k, v|
+      if v == 1
+        result << "(#{v})"
+      else
+        result << "(#{k}**#{v})"
+      end
+    end
+    result
   end
 
 #Primes in numbers

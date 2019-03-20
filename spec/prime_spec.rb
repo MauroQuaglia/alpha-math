@@ -84,6 +84,12 @@ describe Prime do
       expect(described_class.decomposition(221)).to eq([13, 17])
     end
 
+    it 'ddd' do
+      expect(described_class.print_decomposition([2])).to eq('(2**1)')
+      expect(described_class.print_decomposition([2,2])).to eq('(2**2)')
+      expect(described_class.print_decomposition([2,2,3])).to eq('(2**2)(3**1)')
+    end
+
   end
 
 end
