@@ -22,17 +22,13 @@ describe Prime do
       end
     end
 
-    it "2 should be prime" do
-      expect(described_class.prime?(4)).to be_truthy
-    end
-
   end
 
   describe '.decomposition' do
 
     [2, 3, 5, 7, 11, 13, 17, 19].each do |value|
       it "#{value} should not be decomposed" do
-        expect(described_class.decomposition(value)).to eq("(#{value})")
+        expect(described_class.decomposition(value)).to eq([value])
       end
     end
 
@@ -77,17 +73,11 @@ describe Prime do
     end
 
     it "20 should be decomposed" do
-      expect(described_class.decomposition(18)).to eq([2, 2, 5])
+      expect(described_class.decomposition(20)).to eq([2, 2, 5])
     end
 
     it "221 should be decomposed" do
       expect(described_class.decomposition(221)).to eq([13, 17])
-    end
-
-    it 'ddd' do
-      expect(described_class.print_decomposition([2])).to eq('(2**1)')
-      expect(described_class.print_decomposition([2,2])).to eq('(2**2)')
-      expect(described_class.print_decomposition([2,2,3])).to eq('(2**2)(3**1)')
     end
 
   end
