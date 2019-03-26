@@ -82,4 +82,18 @@ describe Prime do
 
   end
 
+  describe '.print_decomposition' do
+    it 'simple number' do
+      expect(described_class.print_decomposition([2])).to eq('(2)')
+    end
+
+    it 'simple number' do
+      expect(described_class.print_decomposition([2, 2, 2, 2, 2])).to eq('(2**5)')
+    end
+
+    it 'simple number' do
+      expect(described_class.print_decomposition([2, 2, 2, 2, 2, 5, 7, 7, 11])).to eq('(2**5)(5)(7**2)(11)')
+    end
+  end
+
 end

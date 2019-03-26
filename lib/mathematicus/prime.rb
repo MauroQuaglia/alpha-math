@@ -23,14 +23,9 @@ class Prime
     map = factors.uniq.map {|factor| [factor, factors.count(factor)]}.to_h
     result = ''
     map.each do |k, v|
-      if v == 1
-        result << "(#{v})"
-      else
-        result << "(#{k}**#{v})"
-      end
+      result << (v == 1 ? "(#{k})" : "(#{k}**#{v})")
     end
     result
   end
 
-#Primes in numbers
 end
