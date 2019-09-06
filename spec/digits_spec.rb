@@ -2,7 +2,7 @@ require_relative '../lib/mathematicus/digits'
 
 describe Digits do
 
-  it 'digital roots for number with ine chiper' do
+  it 'digital roots for number with one chiper' do
     {0 => 0, 1 => 1, 2 => 2, 3 => 3, 4 => 4, 5 => 5, 6 => 6, 7 => 7, 8 => 8, 9 => 9}.each_pair do |k, v|
       expect(described_class.summer(k)).to eq(v)
     end
