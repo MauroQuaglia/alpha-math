@@ -37,7 +37,7 @@ describe Prime do
     end
 
     it "6 should be decomposed" do
-      expect(described_class.decomposition(6)).to eq([2, 3,4])
+      expect(described_class.decomposition(6)).to eq([2, 3, 4])
     end
 
     it "8 should be decomposed" do
@@ -74,6 +74,30 @@ describe Prime do
 
     it "20 should be decomposed" do
       expect(described_class.decomposition(18)).to eq([2, 2, 5])
+    end
+
+  end
+
+  describe '.primorial' do
+# 2,3,5,7
+    it 'should be 2 for first prime number' do
+      expect(described_class.primorial(1)).to eq(2)
+    end
+
+    it 'should be 6 for the two first prime number' do
+      expect(described_class.primorial(2)).to eq(6)
+    end
+
+    it 'should be 30 for the third first prime number' do
+      expect(described_class.primorial(3)).to eq(30)
+    end
+
+    it 'should be 210 for the fourth first prime number' do
+      expect(described_class.primorial(4)).to eq(210)
+    end
+
+    it 'should be 2310 for the fiveth first prime number' do
+      expect(described_class.primorial(5)).to eq(2310)
     end
 
   end

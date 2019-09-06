@@ -18,4 +18,15 @@ class Prime
     end
   end
 
+  def self.primorial(number)
+    primes = []
+    (2...Float::INFINITY).each do |value|
+      if primes.count < number
+        primes << value if prime?(value)
+      else
+        return primes.inject(:*)
+      end
+    end
+  end
+
 end
