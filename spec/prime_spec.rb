@@ -73,9 +73,27 @@ describe Prime do
     end
 
     it "20 should be decomposed" do
-      expect(described_class.decomposition(18)).to eq([2, 2, 5])
+      expect(described_class.decomposition(20)).to eq([2, 2, 5])
     end
 
+    it "221 should be decomposed" do
+      expect(described_class.decomposition(221)).to eq([13, 17])
+    end
+
+  end
+
+  describe '.print_decomposition' do
+    it 'simple number' do
+      expect(described_class.print_decomposition([2])).to eq('(2)')
+    end
+
+    it 'simple number' do
+      expect(described_class.print_decomposition([2, 2, 2, 2, 2])).to eq('(2**5)')
+    end
+
+    it 'simple number' do
+      expect(described_class.print_decomposition([2, 2, 2, 2, 2, 5, 7, 7, 11])).to eq('(2**5)(5)(7**2)(11)')
+    end
   end
 
   describe '.primorial' do
