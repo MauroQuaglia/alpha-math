@@ -1,24 +1,10 @@
 class Number
 
-  def magnitude(value)
-
+  def self.magnitude(value)
+    return -Float::INFINITY if value == 0
+    decimal, power = ("%e" % value.abs).split('e')
+    decimal, power = Float(decimal), Integer(power)
+    decimal < 5 ? power : power + 1
   end
 
 end
-
-# 0 ---> -INF
-# ...
-# [0,055; 0,55)  --> -1
-# [0,55; 5,5) --> 0
-# [5,5; 55)  --> 1
-# [55; 550)  --> 2
-# [550; 5500) --> 3   1000
-# ...
-
-
-# 549 = 5,49 * 100 -> 2
-# 550 = 5,50 * 100 -> 2 + 1
-# 551 = 5,51 * 100 -> 2 + 1
-
-# a * 10^b   0 < |a| < 5,5   -> b
-#            5,5 <= |a| < 10  --> b + 1
