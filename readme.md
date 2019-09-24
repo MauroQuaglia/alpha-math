@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/MauroQuaglia/alpha-math.svg?branch=master)](https://travis-ci.org/MauroQuaglia/alpha-math)
 [![codecov](https://codecov.io/gh/MauroQuaglia/alpha-math/branch/master/graph/badge.svg)](https://codecov.io/gh/MauroQuaglia/alpha-math)
+[![Gem Version](https://badge.fury.io/rb/alpha-math.svg)](https://badge.fury.io/rb/alpha-math)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # alpha-math
