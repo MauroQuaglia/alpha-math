@@ -60,5 +60,4 @@ module AlphaMath
     zeros
   end
 
-
 end

@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/MauroQuaglia/alpha-math.svg?branch=master)](https://travis-ci.org/MauroQuaglia/alpha-math)
+
 # alpha-math
 Why alpha-math?
 Because as **math** is the mathematics, **alpha** is the beginning... just as all the methods of this gem have been implemented, without the help of other gems but only with native Ruby methods. Look at my Gemfile!
