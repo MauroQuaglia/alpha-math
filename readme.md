@@ -1,6 +1,6 @@
 # alpha-math
 Why alpha-math?
-Because as math is the mathematics, alpha is the beginning... just as all the methods of this gem have been implemented, without the help of other gems but only with native Ruby methods. Look at my Gemfile!
+Because as **math** is the mathematics, **alpha** is the beginning... just as all the methods of this gem have been implemented, without the help of other gems but only with native Ruby methods. Look at my Gemfile!
 
 # Full Reference
 Visit the [wiki](https://github.com/MauroQuaglia/mathematicus/wiki) for the full documentation.
