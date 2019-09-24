@@ -1,6 +1,6 @@
-require_relative '../lib/mathematicus'
+require_relative '../lib/alpha_math'
 
-describe Mathematicus do
+describe AlphaMath do
 
   describe '.decomposition' do
 

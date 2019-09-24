@@ -1,6 +1,6 @@
-# mathematicus
-Mathematicus is a Ruby gem which allows you to solve some problems related to the numbers.
-I only use Ruby native methods without the help of other gems.
+# alpha-math
+Why alpha-math?
+Because as math is the mathematics, alpha is the beginning... just as all the methods of this gem have been implemented, without the help of other gems but only with native Ruby methods. Look at my Gemfile!
 
 # Full Reference
 Visit the [wiki](https://github.com/MauroQuaglia/mathematicus/wiki) for the full documentation.
@@ -8,7 +8,7 @@ Visit the [wiki](https://github.com/MauroQuaglia/mathematicus/wiki) for the full
 ## Getting Started
 Edit your Gemfile and add:
 ```ruby
-gem 'mathematicus'
+gem 'alpha-math'
 ```
 Now you can update your gemset with bundle.
 

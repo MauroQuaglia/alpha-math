@@ -1,4 +1,4 @@
-module Mathematicus
+module AlphaMath
 
   def self.decomposition(number, factors = [])
     return factors if number == 1
