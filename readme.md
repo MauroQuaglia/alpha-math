@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/MauroQuaglia/alpha-math.svg?branch=master)](https://travis-ci.org/MauroQuaglia/alpha-math)
+[![codecov](https://codecov.io/gh/MauroQuaglia/alpha-math/branch/master/graph/badge.svg)](https://codecov.io/gh/MauroQuaglia/alpha-math)
 
 # alpha-math
 Why alpha-math?
