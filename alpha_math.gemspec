@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.platform = Gem::Platform::RUBY
   s.name = 'alpha-math'
-  s.version = '0.0.1'
+  s.version = '0.0.2'
   s.date = '2019-09-24'
   s.summary = 'Some tools on numbers.'
   s.description = 'The alpha-math is a Ruby gem which allows you to solve some problems related to the numbers.'
