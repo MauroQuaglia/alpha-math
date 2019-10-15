@@ -1,3 +1,5 @@
+require_relative '../lib/partitions'
+
 module AlphaMath
 
   def self.decomposition(number, factors = [])
@@ -19,7 +21,7 @@ module AlphaMath
   end
 
   def self.divisors_of(number)
-    (1..number / 2).select {|divisor| number.divmod(divisor).last.zero?} << number
+    (1..number / 2).select { |divisor| number.divmod(divisor).last.zero? } << number
   end
 
   def self.magnitude(number)
@@ -58,6 +60,10 @@ module AlphaMath
       multiple *= 5
     end
     zeros
+  end
+
+  def self.partitions(number)
+    Partitions.new.enumerates(number)
   end
 
 end

@@ -1,3 +1,4 @@
+require_relative '../spec/spec_helper'
 require_relative '../lib/alpha_math'
 
 describe AlphaMath do
@@ -244,6 +245,14 @@ describe AlphaMath do
       it "#{value} have seven trailing zeros" do
         expect(described_class.trailing_zeros_of_factorial(value)).to eq(7)
       end
+    end
+
+  end
+
+  describe '.partitions' do
+
+    it 'partitions of 3' do
+      expect(described_class.partitions(3)).to eq([[3], [2, 1], [1, 1, 1]])
     end
 
   end
