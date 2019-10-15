@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.description = 'The alpha-math is a Ruby gem which allows you to solve some problems related to the numbers.'
   s.author = 'Mauro Quaglia'
   s.email = 'mauroquaglia@libero.it'
-  s.files = ['lib/alpha_math.rb', 'lib/partitions']
+  s.files = ['lib/alpha_math.rb', 'lib/partitions.rb']
   s.homepage = 'https://github.com/MauroQuaglia/alpha-math/wiki'
   s.license = 'MIT'
 end
